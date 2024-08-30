@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myJs.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+   
+
+    <!--Picture-->
+    <div class="logo_img">
+        <a id="picture" href="index.html"><img src="My project.png" alt="logo" id="logo"></a>
+    </div>
+
+    
+        <!--Picture and input/button-->
+
+        <div class="main">
+            <div class="main_pic">
+                <img id="pic" src="book-open_desgin2.png" alt="main_pic">
+            </div>
+            <div class="inputs">
+                <section class="word_inputs">
+                    <input class="input_box" type="text" placeholder="Enter your word" id="word_given">
+                    <input class="search" type="button" value="Search" id="fetchButton"
+                        onclick="fetchDataAndDisplayDefinitions()">
+                        <p id="first_p">Provides a meaning of given word in English</p>
+                </section>
+            </div>
+        </div>
+        <!--Output from API-->
+        <div class="output">
+            <div class="searched_word">
+                <h2 id="word"></h2> 
+            </div>
+            <div id="soundtrack">
+                <p4 id="no_sound"></p>
+            </div> 
+
+            
+            <div class="api_text" id="api_text">
+                <h2 id="meaning_heading"></h2>
+
+                <hr class="upper_hr" style="display: none;" id="hr_1">
+                <h3 id="word_n"></h3>
+                <p1 id="noun"></p1>
+                <hr class="lower_hr" style="display: none;" id="hr_2">
+                <p id="noun_meaning"></p>
+
+                <br><br><br>
+                <hr class="upper_hr" style="display: none;" id="hr_3">
+                <h3 id="word_v"></h3>
+                <p1 id="verb"></p1>
+                <hr class="lower_hr" style="display: none;" id="hr_4">
+                <p id="verb_meaning"></p>
+
+                <br><br><br>
+                <hr class="upper_hr" style="display: none;" id="hr_5">
+                <h3 id="word_a"></h3>
+                <p1 id="adjective"></p1>
+                <hr class="lower_hr" style="display: none;" id="hr_6">
+                <p id="adjective_meaning"></p>
+                
+            </div>
+        </div>
+    
+
+</body>
+
+</html>

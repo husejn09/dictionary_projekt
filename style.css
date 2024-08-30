@@ -1,0 +1,155 @@
+body {
+    max-height: max-content;
+}
+
+nav {
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-between; /* Align logo and navigation items */
+}
+
+ul {
+    display: flex; /* Create a horizontal list */
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+    color: black;
+    background-color: blue;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+#logo {
+    width: 80px;
+}
+
+#picture {
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    max-width: 100%; /* Ensure the picture doesn't exceed the container width */
+}
+
+.logo_img {
+    padding-left: 10px; /* Adjust padding as needed */
+}
+
+.nav_bar {
+    display: flex; /* Create a horizontal navigation bar */
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    text-transform: uppercase;
+    background-color: green;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 80%;
+    
+}
+
+.inputs {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input_box {
+    padding: 10px;
+    font-size: medium;
+}
+
+.search {
+    padding: 10px;
+    font-size: medium;
+}
+
+.output {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.searched_word {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 250%;
+}
+
+.api_text {
+    font-size: larger;
+    width: 60%;
+}
+
+.main_pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+#pic {
+    width: 80%; 
+}
+
+.input_box {
+    max-width: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.search {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#first_p {
+    text-align: center;
+    text-decoration: dotted;
+    font-size: smaller;
+}
+
+/*@keyframes slideLeft {
+    from{transform: translateX(300%);}
+  }*/
+
+#noun, #verb, #adjective {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#word_n, #word_v, #word_a {
+    padding-bottom: 0%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+    .logo_img {
+        padding-left: 0; 
+    }
+    
+}
